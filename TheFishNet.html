@@ -1,24 +1,64 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <link href="TheFishNet.css" type="text/css" rel="stylesheet">
     <title>The Fish Net</title>
+
 </head>
-    
 <body>
-    <header>
-        <h1>The Fish Net</h1>
-        <h6>About Contact Login</h6>
-    </header>
+    <div class="pageHeading">
+        <header>
+            <h1><a href="./TheFishNet.html">The Fishing Hole</a></h1>
+            <nav>
+                <a href="./about.html" class="about">About</a>
+                <a href="./contact.html" class="contact">Contact</a>
+                <a href="./login.html" class="login">Login</a>
+            </nav>
+        </header>
+    </div>
     <main>
-        <form>
-            <h5>Lake Search:</h5>
-            <label>Zip Code</label>
-            <input type="text" name="Zip Code">
-            <label>Species</label>
-            <input type="text" name="Species" value="Optional">
-        </form>
+        <h2>Lake Search:</h2>
+        <div class="lakeSearch">
+            <form action="searchResults.HTML" method="POST">
+                <section>
+                    <label>Zip Code</label>
+                    <input type="text" name="Zip Code" value="Login for location">
+                </section>
+                <section>
+                    <p>Accessibility</p>
+                    <input type="radio" id="any" name="choice" value="Any">
+                    <label for="any">Any</label>
+                    <br>
+                    <input type="radio" id="public" name="choice" value="Public">
+                    <label for="public">Public</label>
+                    <br>
+                    <input type="radio" id="private" name="choice" value="Private">
+                    <label for="private">Private</label>
+                </section>
+                <section>
+                    <label>Species</label>
+                    <input type="text" name="Species" value="Optional">
+                </section>
+                <section>
+                    <input type="submit" value="Submit">
+                </section>
+            </form>
+        </div>
+
+        <div class="hotSpots">
+            <h3>Local Hot Spots</h3>
+            <ul>
+                <li>Login for local Hot Spots.</li>
+            </ul>
+        </div>
+        <div class="recentPosts">
+            <h3>Recent Posts</h3>
+            <ul>
+                <li>Goose Takeover in Benton Park!</li>
+                <li>Where's the fish?</li>
+            </ul>
+        </div>
     </main>
+
 </body>
 </html>

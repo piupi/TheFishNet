@@ -1,0 +1,62 @@
+.pageHeading {
+    background-color: midnightblue; 
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(6,  1fr);
+}
+
+.about {
+    color: white;
+    grid-area: 1/13/span 1/span 2;
+    z-index: 1;
+}
+
+.contact {
+    color: white;
+    grid-area: 1/15/span 1/span 2;
+    z-index: 1;
+}
+
+.login {
+    color: white;
+    grid-area: 1/17/span 1/span 2;
+    z-index: 1;
+}
+
+h1 {
+    color: yellow;	
+    grid-area: 1/1/6/18;
+    justify-content: center;
+    align-content: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+}
+
+h2 {
+    color: white;
+    grid-area: 1/1/span 2/ span 18;
+    justify-content: center;
+}
+
+.lakeSearch {
+    display: inline-block;
+    color: white;
+    grid-area: 3/1/span 2/ span 18;
+    justify-content: center;
+}
+
+.hotSpots {
+    color: white;
+    grid-area: 12/1/span 28/span 7;
+    justify-content: left;
+}
+
+.recentPosts {
+    color: white;
+    grid-area: 12/13/span 28/span 7;
+    justify-content: left;
+}
